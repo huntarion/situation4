@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" ng-app>
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="../node_modules/angular/angular.js"></script>
+	<script src="../js/my-app.js"></script>
+</head>
+<body>
+	<div class="parameters-wrapper" ng-model="modelTest">
+		<div class="parameter">
+			<div>
+				Введите название параметра: <input type="text" placeholder="Название параметра">
+			</div>
+			<div>
+				Выберите тип параметра: 
+				<select name="" id="">
+					<option value="">строка</option>
+					<option value="">число</option>
+				</select>
+			</div>
+			<div>
+				<input type="checkbox"> установить min <br/>
+				Минимальное значение: <input type="text" placeholder="Минимальное значение"> <br/>
+				<input type="checkbox"> установить max <br/> 
+				Максимальное значение: <input type="text" placeholder="Максимальное значение">
+			</div>
+			<div>
+				Введите значение по умолчанию: <input type="text" placeholder="Значение по умолчанию"> <br />
+				<input type="checkbox"> Вводится игроком <br/>
+			</div>
+			<div>
+				<input type="checkbox"> Сделать видимым 
+			</div>
+		</div>
+		<button>Добавить параметр</button>
+	</div>
+	<button>SAVE</button>
+</body>
+</html>
