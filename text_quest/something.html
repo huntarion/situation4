@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Локация</title>
+</head>
+<body>
+	<!-- Шаблон создания локации -->
+	<div class="location-wrapper" ng-model="modelTest"> <!-- вопрос на ЛикБез, нужны ли: 1. указанный класс; 2. Зачем нужен ng-model; 3. Каким должно быть его наполнение? modelTest? -->
+		
+		<!-- Данные Локации -->
+		<p>Название локации: <input type="text" placeholder="Введите название локации">	</p>
+		<p>Техническое название локации: <input type="text" placeholder="Техническое имя локации"></p>
+		<div>Адрес фоновой картинки: <input type="url" placeholder="img локации"></div> <!-- тип URL - ведь используется? он уместен? Или здесь нужно поле "FILE"? -->
+		<div>Описание локации <textarea name="Описание" id="" placeHolder="Введите текст описания"></textarea></div>
+		<hr />
+
+		<!--  Влияние на параметры-->
+		<div class="impactFromParameter">  <!-- нужен тут класс/айди?  -->
+			<select name="" id=""></select>
+			<input type="text" placeholder="изменяется на...">
+		</div>
+		<button>Добавить параметр</button> <!-- Что нужно добавить в БАТТОН, чтобы он клонировал шаблон "Влияние на параметр"? -->
+		
+
+		<!-- Действия  |  тут теже вопросы с кнопкой, что и во "Влияние на параметры"-->
+		<div class="actionName"> <!-- Нужен ли тут класс/айди? -->
+			<input type="text" placeholder="Имя действия"><!-- Может его стоит реализовать через текстариа? -->
+			<select name="" id="">Действие ведет в Локацию ...</select>
+		</div>
+		<button>Добавить действие</button>
+
+		<hr />
+	</div>
+	<button>SAVE</button>
+
+
+</body>
+</html> 
