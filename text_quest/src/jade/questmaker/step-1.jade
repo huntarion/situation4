@@ -1,1 +1,45 @@
 //- степ-1 это параметры
+doctype html
+html(lang='en', ng-app='')
+  head
+    meta(charset='UTF-8')
+    title Параметр
+    script(src='../node_modules/angular/angular.js')
+    script(src='../js/my-app.js')
+  body
+    .parameters-wrapper(ng-model='modelTest')
+      // вложенный запаметр; + нг-модел?
+      .parameter
+        div
+          | Введите название параметра: 
+          input(type='text', placeholder='Название параметра')
+          // строка, а за ней сразу блок
+        div
+          | Выберите тип параметра: 
+          select(name='', id='')
+            option(value='') строка
+            option(value='') число
+        div
+          input(type='checkbox')
+          |  установить min 
+          br
+          | 				Минимальное значение: 
+          input(type='text', placeholder='Минимальное значение')
+          br
+          input(type='checkbox')
+          |  установить max 
+          br
+          | 				Максимальное значение: 
+          input(type='text', placeholder='Максимальное значение')
+        div
+          | Введите значение по умолчанию: 
+          input(type='text', placeholder='Значение по умолчанию')
+          br
+          input(type='checkbox')
+          |  Вводится игроком 
+          br
+        div
+          input(type='checkbox')
+          |  Сделать видимым
+      button Добавить параметр
+    button SAVE

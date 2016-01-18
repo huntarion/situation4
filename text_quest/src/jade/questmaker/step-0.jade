@@ -1,1 +1,31 @@
-//- степ-0 это первая форма по заданию названия квеста 
+doctype html 
+  //- степ-0 это первая форма по заданию названия квеста
+  doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    title amad0n-list
+    script(src='http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js')
+    script(src='process.js')
+  body
+    form
+      table
+        tr
+          td Введите название квеста
+          td
+            input(placeholder='Название квеста', type='text', name='quest-title')
+        tr
+          td Введите ссылку на обложку квеста
+          td
+            input(placeholder='ссылка на обложку текста', type='text', name='quest-cover')
+        tr
+          td Введите описание квеста
+          td
+            textarea(placeholder='Описание квеста', name='quest-description', id='')
+        tr
+          td
+          td
+            button#qcNext Далее
+    #foo
+      | some text
+    button#addTextButton Добавить текст
