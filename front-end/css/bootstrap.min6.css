@@ -1,0 +1,12 @@
+.container
+  width 100px
+  margin 0 auto
+
+p, header
+  background #f0f0a0
+  col #aaa
+
+header
+  background #f090a0
+
+  

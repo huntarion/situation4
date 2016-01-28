@@ -1,0 +1,28 @@
+.wrap {
+	width:840px;
+	margin: 0 auto;
+}
+header {
+	background: green;	
+}
+
+.content, aside {
+	height: 400px;
+}
+
+.content {
+	float: left;
+	background: #d0d0d0;
+	width: 80%;
+}
+
+aside {
+	float:left;
+	background: #c0ff90;
+	width: 20%;
+}
+footer {
+	background: #999999;
+	/* чтобы текст не наплывал , есть такая штука:*/
+	clear: both;
+}

@@ -1,0 +1,14 @@
+.container {
+	/* width: 1140px;*/
+	margin: 0 auto; /*автоматическое фикcирование горизонтального блока */
+	/* margin: 40px, 30 px, 20px, 10px; */
+}
+header {
+	text-align: center; 
+}
+
+.main_content {
+	width: 858px;
+	margin: 0 auto;
+
+}
